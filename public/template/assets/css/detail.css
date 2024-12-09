@@ -1,0 +1,74 @@
+.detail-content {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    margin: 20px; 
+    padding: 10px;
+    justify-content: center;
+}
+
+.header-judul{
+
+    padding: 5px;
+    text-align: center;
+}
+
+.table{
+    margin: 5px 0 ;
+}
+
+.header-content-timbangan-bersih{
+    font-size: x-large;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold
+}
+
+#sig-canvas {
+    border: 2px dotted #131212;
+    border-radius: 15px;
+    cursor: crosshair;
+
+  }
+  .canvas-sig-id {
+   
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Pusatkan elemen */
+    gap: 10px; /* Jarak antar elemen */
+    max-width: 700px; /* Batasi lebar maksimal */
+    margin: 0 auto; /* Pusatkan container */
+}
+
+#sig-canvas {
+    width: 100%; /* Membuat lebar penuh */
+    height: auto; /* Menyesuaikan tinggi secara proporsional */
+    border: 2px dotted #131212; /* Batas */
+    border-radius: 15px; /* Sudut membulat */
+    cursor: crosshair; /* Kursor berbentuk tanda silang */
+    display: block; /* Hilangkan jarak bawaan elemen inline */
+    box-sizing: border-box; /* Pastikan padding tidak menambah ukuran */
+}
+
+.canvas-wrapper {
+    width: 100%; /* Lebar penuh */
+    max-width: 100%; /* Hindari melebihi layar */
+    padding: 10px; /* Opsional: Jarak di sekitar */
+    box-sizing: border-box; /* Padding tidak memengaruhi ukuran total */
+}
+
+.detail-table{
+    border: 1px solid rgb(158, 158, 158);
+    margin: 2px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.table-responsive-flex {
+    display: flex;
+    justify-content: center;
+}
+
+

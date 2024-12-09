@@ -1,0 +1,19 @@
+<IfModule authz_core_module>
+	Require all denied
+</IfModule>
+<IfModule !authz_core_module>
+	Deny from all
+</IfModule>
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Redirect requests to the /index.php path
+    RewriteCond %{REQUEST_URI} ^/index\.php
+    RewriteRule ^index\.php(.*)$ /$1 [L,R=301]
+
+    # Remap root requests to index.php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php/$1 [L]
+</IfModule>
